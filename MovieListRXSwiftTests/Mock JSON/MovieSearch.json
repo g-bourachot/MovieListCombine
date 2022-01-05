@@ -1,0 +1,76 @@
+{
+   "Search":[
+      {
+         "Title":"The Dark Knight",
+         "Year":"2008",
+         "imdbID":"tt0468569",
+         "Type":"movie",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg"
+      },
+      {
+         "Title":"The Dark Knight Rises",
+         "Year":"2012",
+         "imdbID":"tt1345836",
+         "Type":"movie",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg"
+      },
+      {
+         "Title":"Batman: The Dark Knight Returns, Part 1",
+         "Year":"2012",
+         "imdbID":"tt2313197",
+         "Type":"movie",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BMzIxMDkxNDM2M15BMl5BanBnXkFtZTcwMDA5ODY1OQ@@._V1_SX300.jpg"
+      },
+      {
+         "Title":"Batman: The Dark Knight Returns, Part 2",
+         "Year":"2013",
+         "imdbID":"tt2166834",
+         "Type":"movie",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BYTEzMmE0ZDYtYWNmYi00ZWM4LWJjOTUtYTE0ZmQyYWM3ZjA0XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
+      },
+      {
+         "Title":"Batman: The Dark Knight",
+         "Year":"2008",
+         "imdbID":"tt2098632",
+         "Type":"movie",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BMzRjOTg1YWYtZTE0NC00MGI5LTlmNDAtMzllM2M1MmQ4N2ViXkEyXkFqcGdeQXVyNjczMzc5NzQ@._V1_SX300.jpg"
+      },
+      {
+         "Title":"Batman: The Dark Knight Returns",
+         "Year":"2013",
+         "imdbID":"tt11060882",
+         "Type":"movie",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BMjExMGE4NDQtM2MwMS00YzhlLTlkYjgtNmExNzM1ZDBhYzg1XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_SX300.jpg"
+      },
+      {
+         "Title":"The Dark Knight Retires",
+         "Year":"2013–",
+         "imdbID":"tt2257218",
+         "Type":"series",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BMTkxMDczOTM3OF5BMl5BanBnXkFtZTgwNTg1MzM4MDE@._V1_SX300.jpg"
+      },
+      {
+         "Title":"Star Wars: Jedi Knight - Dark Forces II",
+         "Year":"1997",
+         "imdbID":"tt0160910",
+         "Type":"game",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BODg4NDNjNzctMzAzOS00Mjc0LTk2MzEtNWE3OWM1ZDVkNWNmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjg3MDM4Mzc@._V1_SX300.jpg"
+      },
+      {
+         "Title":"Legends of the Dark Knight: The History of Batman",
+         "Year":"2005",
+         "imdbID":"tt0486410",
+         "Type":"movie",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BOThhYmY3MjItMWFiZC00ZmRjLTg1NmQtMzdkMDJkYzc0ZDNhXkEyXkFqcGdeQXVyNzAwMjQwMTA@._V1_SX300.jpg"
+      },
+      {
+         "Title":"The Dark Knight",
+         "Year":"2000–",
+         "imdbID":"tt0251504",
+         "Type":"series",
+         "Poster":"https://m.media-amazon.com/images/M/MV5BNWFjNzM0M2EtZDE4ZS00NDZlLTlhYjItNDhhNjgxODllYzdhXkEyXkFqcGdeQXVyNDUxNjc5NjY@._V1_SX300.jpg"
+      }
+   ],
+   "totalResults":"73",
+   "Response":"True"
+}
