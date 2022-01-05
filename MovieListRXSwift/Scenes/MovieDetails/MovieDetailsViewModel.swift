@@ -6,13 +6,12 @@
 //
 
 import Foundation
-import RxSwift
-import RxCocoa
 import PromiseKit
+import Combine
 
 protocol MovieDetailsViewModelLogic: AnyObject {
     var movieAPI: MovieAPILogic { get }
-    var item: PublishSubject<Movie> { get }
+    var itemPublisher: Published<Movie?>.Publisher { get }
     func searchMovieById(_ identifier: Movie.Identifier)
 }
 
@@ -20,7 +19,8 @@ class MovieDetailsViewModel: MovieDetailsViewModelLogic {
     
     // MARK: - Variables
     var movieAPI: MovieAPILogic
-    var item = PublishSubject<Movie>()
+    @Published var item: Movie?
+    var itemPublisher: Published<Movie?>.Publisher { $item }
     
     init(movieAPI: MovieAPILogic) {
         self.movieAPI = movieAPI
@@ -30,9 +30,10 @@ class MovieDetailsViewModel: MovieDetailsViewModelLogic {
         firstly {
             self.movieAPI.searchMovieById(identifier).promise
         }.done { movie in
-            self.item.onNext(movie)
+            self.item = movie
         }.catch { error in
-            self.item.onError(error)
+            print(error)
+            //self.item.onError(error)
         }
     }
 }

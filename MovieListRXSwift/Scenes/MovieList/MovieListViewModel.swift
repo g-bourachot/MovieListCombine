@@ -11,7 +11,7 @@ import PromiseKit
 
 protocol MovieListViewModelLogic: AnyObject {
     var movieAPI: MovieAPILogic { get }
-    var items: [MovieList.CellModel] { get }
+    var itemsPublisher: Published<[MovieList.CellModel]>.Publisher { get }
     func setDelegate(to object: MovieListViewModelDelegate)
     func searchMovie(searchText: String)
     func cancelCurrentSearch()
@@ -27,6 +27,7 @@ class MovieListViewModel: MovieListViewModelLogic {
     // MARK: - Variables
     var movieAPI: MovieAPILogic
     @Published var items: [MovieList.CellModel] = []
+    var itemsPublisher: Published<[MovieList.CellModel]>.Publisher { $items }
     weak var delegate: MovieListViewModelDelegate?
     private var currentSearch: (promise: Promise<MovieSearch>, cancel: () -> Void)?
     

@@ -15,9 +15,6 @@
 		344AA289276A7765006E0B78 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AA288276A7765006E0B78 /* Movie.swift */; };
 		344AA28C276A7C92006E0B78 /* StringAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AA28B276A7C92006E0B78 /* StringAdditions.swift */; };
 		344AA28E276A8DE5006E0B78 /* MovieSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 344AA28D276A8DE5006E0B78 /* MovieSearch.json */; };
-		344AA291276A94FD006E0B78 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 344AA290276A94FD006E0B78 /* RxCocoa */; };
-		344AA293276A94FD006E0B78 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 344AA292276A94FD006E0B78 /* RxRelay */; };
-		344AA295276A94FD006E0B78 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 344AA294276A94FD006E0B78 /* RxSwift */; };
 		344AA299276A9566006E0B78 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AA298276A9566006E0B78 /* MovieListTableViewCell.swift */; };
 		344AA29B276A9582006E0B78 /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 344AA29A276A9582006E0B78 /* MovieListTableViewCell.xib */; };
 		344AA29E276A96ED006E0B78 /* GBComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 344AA29D276A96ED006E0B78 /* GBComponents */; };
@@ -114,11 +111,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				344AA2A4276A96ED006E0B78 /* GBUIKitAdditions in Frameworks */,
-				344AA293276A94FD006E0B78 /* RxRelay in Frameworks */,
-				344AA291276A94FD006E0B78 /* RxCocoa in Frameworks */,
 				277FB861276C958300B2FBB6 /* MBProgressHUD in Frameworks */,
 				344AA29E276A96ED006E0B78 /* GBComponents in Frameworks */,
-				344AA295276A94FD006E0B78 /* RxSwift in Frameworks */,
 				344AA2A2276A96ED006E0B78 /* GBSwiftAdditions in Frameworks */,
 				344AA27E276A6173006E0B78 /* PromiseKit in Frameworks */,
 				344AA2A0276A96ED006E0B78 /* GBExtensions in Frameworks */,
@@ -323,9 +317,6 @@
 			name = MovieListCombine;
 			packageProductDependencies = (
 				344AA27D276A6173006E0B78 /* PromiseKit */,
-				344AA290276A94FD006E0B78 /* RxCocoa */,
-				344AA292276A94FD006E0B78 /* RxRelay */,
-				344AA294276A94FD006E0B78 /* RxSwift */,
 				344AA29D276A96ED006E0B78 /* GBComponents */,
 				344AA29F276A96ED006E0B78 /* GBExtensions */,
 				344AA2A1276A96ED006E0B78 /* GBSwiftAdditions */,
@@ -406,7 +397,6 @@
 			mainGroup = 34D767FC2767E8FF00708586;
 			packageReferences = (
 				344AA27C276A6173006E0B78 /* XCRemoteSwiftPackageReference "PromiseKit" */,
-				344AA28F276A94FD006E0B78 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				344AA29C276A96ED006E0B78 /* XCRemoteSwiftPackageReference "GBSwiftAdditions" */,
 				277FB85E276C950600B2FBB6 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
@@ -857,14 +847,6 @@
 				minimumVersion = 6.0.0;
 			};
 		};
-		344AA28F276A94FD006E0B78 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
 		344AA29C276A96ED006E0B78 /* XCRemoteSwiftPackageReference "GBSwiftAdditions" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:g-bourachot/GBSwiftAdditions.git";
@@ -885,21 +867,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 344AA27C276A6173006E0B78 /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
-		};
-		344AA290276A94FD006E0B78 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 344AA28F276A94FD006E0B78 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		344AA292276A94FD006E0B78 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 344AA28F276A94FD006E0B78 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		344AA294276A94FD006E0B78 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 344AA28F276A94FD006E0B78 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
 		};
 		344AA29D276A96ED006E0B78 /* GBComponents */ = {
 			isa = XCSwiftPackageProductDependency;

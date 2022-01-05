@@ -7,8 +7,7 @@
 
 import Foundation
 import UIKit
-import RxSwift
-import RxCocoa
+import Combine
 import GBUIKitAdditions
 
 protocol MovieDetailsDisplayLogic: AnyObject {
@@ -43,13 +42,13 @@ class MovieDetailsViewController: UIViewController {
     
     // MARK: - Variables
     var movieIdentifier: Movie.Identifier?
-    private let bag = DisposeBag()
+    private var subscriptions = [AnyCancellable]()
     private let viewModel: MovieDetailsViewModelLogic = MovieDetailsViewModel(movieAPI: MovieAPI.shared)
     
     // MARK: - Overrided functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpSearchMovie()
+        setUpObservers()
         guard let movieId = self.movieIdentifier else {
             return
         }
@@ -57,13 +56,16 @@ class MovieDetailsViewController: UIViewController {
     }
     
     // MARK: - Private functions
-    private func setUpSearchMovie() {
-        self.viewModel
-            .item
-            .subscribe(onNext: { [unowned self] movie in
+    private func setUpObservers() {
+        self.viewModel.itemPublisher
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: { (movie) in
+                guard let movie = movie else {
+                    return
+                }
                 self.configureView(with: movie)
-        })
-        .disposed(by: bag)
+            })
+            .store(in: &subscriptions)
     }
     
     private func configureView(with movie: Movie) {
